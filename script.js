@@ -23,39 +23,21 @@ let passed = false;
 */
 // **sua lógica a partir daqui**
 
-/*if (gender === "male") {
-    passed = false
-    if (height >= 1.70) {
-         passed = true;
-    }else{passed = false}
-    if (barReps >= 6 || barSeconds >= 15) {
-         passed = true;
-    }else{passed = false}
-    if (abs >= 41) {
-         passed = true;
-    }else{passed = false}
-    if (runDistance >= 3000 && runTime >= 720 || runDistance >= 5000 && runTime >= 1200) {
-         passed = true;
-    } else{passed = false}
-    if (swimDistance >= 100 && swimTime >= 60 || diveTime <= 30) {
-         passed = true;
-    } else {
-         passed = false
-        }
-}*/
+//vai verificar se e masculino ou feminino
 if (gender === "male") {
-    passed = false
+     //se altura for maio ou igual 1.70 passa
     if (height >= 1.70) {
-         passed = true;
+        
+         //se repetiçoes de barras for maio ou igual 6 passa ou se barseconds for maior ou igual a 15 tambem passa
          if (barReps >= 6 || barSeconds >= 15) {
-              passed = true;
-     
+             
+               //se abdominais for maior igual 41 passa
               if (abs >= 41) {
-                   passed = true;
-          
+                  
+                    //se correu uma distancia maior ou igual 3km e demerou menos ou igual a 12 minutos passa ou se correu maior ou igual 5km e demorou menos ou igual a 20 minutos passa 
                    if (runDistance >= 3000 && runTime <= 720 || runDistance >= 5000 && runTime <= 1200) {
-                        passed = true;
-               
+          
+                         //se nadou maior ou igual a 100m e demorou menos ou igual a 1 minuto passa ou se mergulhou menor ou igual a 30 segundos passa
                         if (swimDistance >= 100 && swimTime <= 60 || diveTime <= 30) {
                              passed = true;
                     
@@ -66,19 +48,26 @@ if (gender === "male") {
     } else {passed = false}
 }
 
+//vai verificar se e masculino ou feminino
 if (gender === "female") {
-    passed = false
-    if (height >= 1.60) {
-         passed = true;
-         if (barReps >= 5 || barSeconds >= 12) {
-              passed = true;
+
+     //se altura for maio ou igual 1.60 passa
+     if (height >= 1.60) {
      
-              if (abs >= 41) {
-                   passed = true;
+
+          //se repetiçoes de barras for maio ou igual 5 passa ou se barseconds for maior ou igual a 12 tambem passa
+         if (barReps >= 5 || barSeconds >= 12) {
+           
           
+              //se abdominais for maior igual 41 passa
+              if (abs >= 41) {
+                 
+
+                    //se correu uma distancia maior ou igual 4km e demerou menos ou igual a 15 minutos passa ou se correu maior ou igual 6km e demorou menos ou igual a 22 minutos passa 
                    if (runDistance >= 4000 && runTime <= 900 || runDistance >= 6000 && runTime <= 1320) {
-                        passed = true;
-               
+                   
+
+                         //se nadou maior ou igual a 100m e demorou menos ou igual a 1 minuto passa ou se mergulhou menor ou igual a 30 segundos passa
                         if (swimDistance >= 100 && swimTime <= 60 || diveTime <= 30) {
                              passed = true;
                     
